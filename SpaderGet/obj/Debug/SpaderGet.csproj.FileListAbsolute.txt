@@ -1,0 +1,10 @@
+E:\MyData\SpaderGet\SpaderGet\obj\Debug\SpaderGet.csprojResolveAssemblyReference.cache
+E:\MyData\SpaderGet\SpaderGet\bin\SpaderGet.dll
+E:\MyData\SpaderGet\SpaderGet\bin\SpaderGet.pdb
+E:\MyData\SpaderGet\SpaderGet\bin\Common.dll
+E:\MyData\SpaderGet\SpaderGet\bin\RegexRule.dll
+E:\MyData\SpaderGet\SpaderGet\bin\Common.pdb
+E:\MyData\SpaderGet\SpaderGet\bin\RegexRule.pdb
+E:\MyData\SpaderGet\SpaderGet\obj\Debug\SpaderGet.dll
+E:\MyData\SpaderGet\SpaderGet\obj\Debug\SpaderGet.pdb
+E:\MyData\SpaderGet\SpaderGet\bin\Newtonsoft.Json.dll

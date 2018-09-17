@@ -1,0 +1,293 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D0AF1F05-FCE7-45FC-9E7B-FEF228F230AB}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SpaderGet</RootNamespace>
+    <AssemblyName>SpaderGet</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="css\css.css" />
+    <Content Include="css\jquery-ui.css" />
+    <Content Include="css\star.css" />
+    <Content Include="demo.aspx" />
+    <Content Include="image\stark2.png" />
+    <Content Include="image\starky.png" />
+    <Content Include="image\stars2.png" />
+    <Content Include="image\starsy.png" />
+    <Content Include="js\brand.js" />
+    <Content Include="js\common.js" />
+    <Content Include="js\jquery-1.7.2.min.js" />
+    <Content Include="js\jquery.cookie.js" />
+    <Content Include="js\jquery_ui.js" />
+    <Content Include="js\js_tool.js" />
+    <Content Include="js\kb_rels.js" />
+    <Content Include="js\kb_validate.js" />
+    <Content Include="js\list.js" />
+    <Content Include="js\Release.js" />
+    <Content Include="js\startScore.js" />
+    <Content Include="kb_content.aspx" />
+    <Content Include="kb_list.aspx" />
+    <Content Include="kb_list_cheak.aspx" />
+    <Content Include="kb_Release.aspx" />
+    <Content Include="page\Content.aspx" />
+    <Content Include="page\ConfigPage.aspx" />
+    <Content Include="page\content_preview.aspx" />
+    <Content Include="page\Index.aspx" />
+    <Content Include="page\List.aspx" />
+    <Content Include="page\list_preview.aspx" />
+    <Content Include="smalltest.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="WebForm1.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ajax\edit_config.ashx.cs">
+      <DependentUpon>edit_config.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ajax\get_brand.ashx.cs">
+      <DependentUpon>get_brand.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ajax\get_brandID.ashx.cs">
+      <DependentUpon>get_brandID.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ajax\get_car.ashx.cs">
+      <DependentUpon>get_car.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ajax\get_city.ashx.cs">
+      <DependentUpon>get_city.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ajax\get_province.ashx.cs">
+      <DependentUpon>get_province.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ajax\get_province_code.ashx.cs">
+      <DependentUpon>get_province_code.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ajax\get_series.ashx.cs">
+      <DependentUpon>get_series.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ajax\Release.ashx.cs">
+      <DependentUpon>Release.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ajax\saveurl.ashx.cs">
+      <DependentUpon>saveurl.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ajax\set_url.ashx.cs">
+      <DependentUpon>set_url.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="demo.aspx.cs">
+      <DependentUpon>demo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="demo.aspx.designer.cs">
+      <DependentUpon>demo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="kb_content.aspx.cs">
+      <DependentUpon>kb_content.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="kb_content.aspx.designer.cs">
+      <DependentUpon>kb_content.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="kb_list.aspx.cs">
+      <DependentUpon>kb_list.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="kb_list.aspx.designer.cs">
+      <DependentUpon>kb_list.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="kb_list_cheak.aspx.cs">
+      <DependentUpon>kb_list_cheak.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="kb_list_cheak.aspx.designer.cs">
+      <DependentUpon>kb_list_cheak.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="kb_Release.aspx.cs">
+      <DependentUpon>kb_Release.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="kb_Release.aspx.designer.cs">
+      <DependentUpon>kb_Release.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="page\Content.aspx.cs">
+      <DependentUpon>Content.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="page\Content.aspx.designer.cs">
+      <DependentUpon>Content.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="page\ConfigPage.aspx.cs">
+      <DependentUpon>ConfigPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="page\ConfigPage.aspx.designer.cs">
+      <DependentUpon>ConfigPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="page\content_preview.aspx.cs">
+      <DependentUpon>content_preview.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="page\content_preview.aspx.designer.cs">
+      <DependentUpon>content_preview.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="page\Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="page\Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="page\List.aspx.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="page\List.aspx.designer.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="page\list_preview.aspx.cs">
+      <DependentUpon>list_preview.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="page\list_preview.aspx.designer.cs">
+      <DependentUpon>list_preview.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="smalltest.aspx.cs">
+      <DependentUpon>smalltest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="smalltest.aspx.designer.cs">
+      <DependentUpon>smalltest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{EE7A6E88-7B04-4A5C-A978-CAFFFD9854F1}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RegexRule\RegexCenter.csproj">
+      <Project>{944B50E4-8E4C-416D-8FC6-5B053603B842}</Project>
+      <Name>RegexCenter</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ajax\get_province.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ajax\get_city.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ajax\get_province_code.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ajax\get_brand.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ajax\get_car.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ajax\get_series.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ajax\Release.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ajax\set_url.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ajax\get_brandID.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ajax\edit_config.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ajax\saveurl.ashx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>52119</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

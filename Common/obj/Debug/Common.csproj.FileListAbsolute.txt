@@ -1,0 +1,7 @@
+E:\MyData\SpaderGet\Common\obj\Debug\Common.csprojResolveAssemblyReference.cache
+E:\MyData\SpaderGet\Common\bin\Debug\Common.dll
+E:\MyData\SpaderGet\Common\bin\Debug\Common.pdb
+E:\MyData\SpaderGet\Common\bin\Debug\RegexRule.dll
+E:\MyData\SpaderGet\Common\bin\Debug\RegexRule.pdb
+E:\MyData\SpaderGet\Common\obj\Debug\Common.dll
+E:\MyData\SpaderGet\Common\obj\Debug\Common.pdb

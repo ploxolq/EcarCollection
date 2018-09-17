@@ -1,0 +1,4 @@
+E:\MyData\SpaderGet\RegexRule\bin\Debug\RegexRule.dll
+E:\MyData\SpaderGet\RegexRule\bin\Debug\RegexRule.pdb
+E:\MyData\SpaderGet\RegexRule\obj\Debug\RegexRule.dll
+E:\MyData\SpaderGet\RegexRule\obj\Debug\RegexRule.pdb

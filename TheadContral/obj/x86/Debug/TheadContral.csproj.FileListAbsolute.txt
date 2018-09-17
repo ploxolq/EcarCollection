@@ -1,0 +1,7 @@
+E:\MyData\SpaderGet\TheadContral\bin\Debug\TheadContral.exe
+E:\MyData\SpaderGet\TheadContral\bin\Debug\TheadContral.pdb
+E:\MyData\SpaderGet\TheadContral\bin\Debug\Common.dll
+E:\MyData\SpaderGet\TheadContral\bin\Debug\Common.pdb
+E:\MyData\SpaderGet\TheadContral\obj\x86\Debug\TheadContral.csprojResolveAssemblyReference.cache
+E:\MyData\SpaderGet\TheadContral\obj\x86\Debug\TheadContral.exe
+E:\MyData\SpaderGet\TheadContral\obj\x86\Debug\TheadContral.pdb

@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{EE7A6E88-7B04-4A5C-A978-CAFFFD9854F1}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Common</RootNamespace>
+    <AssemblyName>Common</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Bll\Brand_Letter_BLL.cs" />
+    <Compile Include="Bll\City_BLL.cs" />
+    <Compile Include="Bll\Config_BLL.cs" />
+    <Compile Include="Bll\Factory_Letter_BLL.cs" />
+    <Compile Include="Bll\KB_content_BLL.cs" />
+    <Compile Include="Bll\KB_list_BLL.cs" />
+    <Compile Include="Bll\V_Car_BLL.cs" />
+    <Compile Include="Bll\V_Series_BLL.cs" />
+    <Compile Include="common\ForeachClass.cs" />
+    <Compile Include="Dal\City_Dal.cs" />
+    <Compile Include="Dal\Ecar_koubeiC__Dal.cs" />
+    <Compile Include="Dal\Ecar_koubei_Dal.cs" />
+    <Compile Include="Dal\Product_Dal.cs" />
+    <Compile Include="Helper\HtmlHandle.cs" />
+    <Compile Include="Model\Config_Model.cs" />
+    <Compile Include="Model\ecar_content.cs" />
+    <Compile Include="Model\ecar_list.cs" />
+    <Compile Include="Model\RegexCont_Model.cs" />
+    <Compile Include="Model\RegexList_Model.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sqlhelper\City_SQL.cs" />
+    <Compile Include="Sqlhelper\Ecar_KB_CHM_DB.cs" />
+    <Compile Include="Sqlhelper\Ecar_koubei_DB.cs" />
+    <Compile Include="Sqlhelper\Product_SQL.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\RegexRule\RegexCenter.csproj">
+      <Project>{944B50E4-8E4C-416D-8FC6-5B053603B842}</Project>
+      <Name>RegexCenter</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Regex\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
